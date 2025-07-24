@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center p-6 border-b border-[#373737] border-opacity-50">
+    <div className="flex justify-between items-center bg-[#151515] p-6 border-b border-[#373737] border-opacity-50">
       <div>
         <img className = "cursor-pointer" src="/logo.png" alt="" />
       </div>
