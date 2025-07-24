@@ -15,7 +15,7 @@ const IncidentsSidebar = ({
   onSelectIncident: (inc: Incident) => void;
   onResolve: (id: number) => void;
 }) => (
-  <div className="w-1/2 rounded bg-black/50 p-4 flex flex-col">
+  <div className="w-1/2 p-4 m-2 flex flex-col bg-[#131313] rounded-xl mt-4">
     {/* Header */}
     <div className="flex items-center justify-between mb-4">
       <h2 className="text-lg font-semibold flex items-center">
@@ -38,10 +38,10 @@ const IncidentsSidebar = ({
         incidents.map((incident) => (
           <div
             key={incident.id}
-            className={`flex gap-3 p-3 rounded-lg cursor-pointer items-center ${
+            className={`flex gap-3 p-3 rounded-lg cursor-pointer items-center bg-[#131313] hover:bg-[#151515] ${
               selectedIncident?.id === incident.id
-                ? "bg-gray-800 ring-2 ring-yellow-500"
-                : "bg-gray-800 hover:bg-gray-700"
+                ? "border border-yellow-500"
+                : ""
             }`}
             onClick={() => onSelectIncident(incident)}
           >
@@ -60,7 +60,7 @@ const IncidentsSidebar = ({
                     e.stopPropagation();
                     onResolve(incident.id);
                   }}
-                  className="text-xs text-yellow-300 hover:text-yellow-100 px-2 py-1 rounded hover:bg-gray-600"
+                  className="text-xs text-yellow-300 px-2 py-1 rounded hover:bg-green-400 hover:text-black cursor-pointer transition-all duration-300"
                 >
                   Resolve
                 </button>

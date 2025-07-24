@@ -21,7 +21,7 @@ const VideoPanel = ({
   incidents: Incident[];
   onSelectIncident: (incident: Incident) => void;
 }) => (
-  <div className="w-1/2 p-4 border-r border-gray-800 flex flex-col">
+  <div className="w-1/2 p-4 mt-[2px] border-r border-gray-800 flex flex-col">
     {/* Main Video Feed */}
     <div className="relative bg-gray-900 rounded-lg overflow-hidden mb-4 h-[500px]">
       {selectedIncident ? (
