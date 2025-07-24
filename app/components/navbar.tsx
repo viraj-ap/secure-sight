@@ -2,13 +2,13 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-[#151515] p-6 border-b border-[#373737] border-opacity-50">
+    <div className="flex justify-between items-center bg-black p-6 border-b border-[#373737] border-opacity-50">
       <div>
         <img className = "cursor-pointer" src="/logo.png" alt="" />
       </div>
 
     <div className="relative flex-1 mx-8">
-      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-[80%] h-16 bg-gradient-to-r from-yellow-300 to-amber-500 rounded-full blur-2xl opacity-20 pointer-events-none"></div>
+      <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-[80%] h-16 bg-gradient-to-r from-yellow-300 to-amber-500 rounded-full blur-2xl opacity-30 pointer-events-none"></div>
 
       <ul className="flex justify-center gap-10 items-center relative z-10 text-white text-sm font-sans font-bold">
         <li className="flex items-center gap-2 cursor-pointer hover:translate-y-[-5px] transtion-all duration-300">
@@ -51,14 +51,14 @@ const Navbar = () => {
           />
         </div>
         <div className="flex flex-col">
-          <p className="font-medium">Mohammed Ajhas</p>
-          <p className="text-xs text-gray-400">ajhas@mandlac.com</p>
+          <p className="font-medium font text-white">Mohammed Ajhas</p>
+          <p className="text-xs text-white">ajhas@mandlac.com</p>
         </div>
-        <div className="ml-2 cursor-pointer">
+        <div className="cursor-pointer invert">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
